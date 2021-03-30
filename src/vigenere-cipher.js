@@ -1,11 +1,10 @@
 const CustomError = require("../extensions/custom-error");
 
 class VigenereCipheringMachine {
-	encrypt() {
-		return false
-	}
-	decrypt() {
-		return false
+	checkError(message, key) {
+		if (!message || !key) {
+			throw new Error('Ошибка');
+		}
 	}
 }
 
